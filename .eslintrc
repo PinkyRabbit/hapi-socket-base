@@ -1,0 +1,28 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": "@hapi/eslint-config-hapi",
+  "rules": {
+    "indent": ["error", 2],
+    "comma-dangle": ["error", "always-multiline"],
+    "@hapi/hapi/scope-start": 0,
+    "@hapi/hapi/capitalize-modules": 0
+  },
+  "plugins": ["disable"],
+  "overrides": [
+    {
+      "files": ["app/statics/*.js"],
+      "settings": {
+        "disable/plugins": ["@hapi/eslint-config-hapi"]
+      },
+      "plugins": ["fp"],
+      "extends": "plugin:fp/recommended"
+    }
+  ]
+}

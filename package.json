@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "start:dev": "nodemon app/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@hapi/eslint-config-hapi": "^13.0.2",
+    "@hapi/eslint-plugin-hapi": "^4.3.5",
+    "eslint": "^7.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
